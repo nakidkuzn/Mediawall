@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2"×1" Label Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+        
+        .page {
+            width: 8.5in;
+            height: 11in;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 2in);
+            grid-template-rows: repeat(10, 1in);
+            gap: 0;
+        }
+        
+        .label {
+            width: 2in;
+            height: 1in;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            text-align: center;
+            padding: 2px;
+            background: white;
+        }
+        
+        .label:hover {
+            background: #f0f0f0;
+            cursor: text;
+        }
+        
+        .label[contenteditable="true"]:focus {
+            outline: 2px solid #007acc;
+            background: white;
+        }
+        
+        @media print {
+            .page {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            .label {
+                border: 1px solid #000;
+                break-inside: avoid;
+            }
+            
+            .label:hover {
+                background: white;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            @page {
+                margin: 0;
+                size: letter;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="label" contenteditable="true">Label 1</div>
+        <div class="label" contenteditable="true">Label 2</div>
+        <div class="label" contenteditable="true">Label 3</div>
+        <div class="label" contenteditable="true">Label 4</div>
+        <div class="label" contenteditable="true">Label 5</div>
+        <div class="label" contenteditable="true">Label 6</div>
+        <div class="label" contenteditable="true">Label 7</div>
+        <div class="label" contenteditable="true">Label 8</div>
+        <div class="label" contenteditable="true">Label 9</div>
+        <div class="label" contenteditable="true">Label 10</div>
+        <div class="label" contenteditable="true">Label 11</div>
+        <div class="label" contenteditable="true">Label 12</div>
+        <div class="label" contenteditable="true">Label 13</div>
+        <div class="label" contenteditable="true">Label 14</div>
+        <div class="label" contenteditable="true">Label 15</div>
+        <div class="label" contenteditable="true">Label 16</div>
+        <div class="label" contenteditable="true">Label 17</div>
+        <div class="label" contenteditable="true">Label 18</div>
+        <div class="label" contenteditable="true">Label 19</div>
+        <div class="label" contenteditable="true">Label 20</div>
+        <div class="label" contenteditable="true">Label 21</div>
+        <div class="label" contenteditable="true">Label 22</div>
+        <div class="label" contenteditable="true">Label 23</div>
+        <div class="label" contenteditable="true">Label 24</div>
+        <div class="label" contenteditable="true">Label 25</div>
+        <div class="label" contenteditable="true">Label 26</div>
+        <div class="label" contenteditable="true">Label 27</div>
+        <div class="label" contenteditable="true">Label 28</div>
+        <div class="label" contenteditable="true">Label 29</div>
+        <div class="label" contenteditable="true">Label 30</div>
+        <div class="label" contenteditable="true">Label 31</div>
+        <div class="label" contenteditable="true">Label 32</div>
+        <div class="label" contenteditable="true">Label 33</div>
+        <div class="label" contenteditable="true">Label 34</div>
+        <div class="label" contenteditable="true">Label 35</div>
+        <div class="label" contenteditable="true">Label 36</div>
+        <div class="label" contenteditable="true">Label 37</div>
+        <div class="label" contenteditable="true">Label 38</div>
+        <div class="label" contenteditable="true">Label 39</div>
+        <div class="label" contenteditable="true">Label 40</div>
+    </div>
+</body>
+</html>
